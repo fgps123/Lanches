@@ -10,8 +10,13 @@ create table fillings (
 insert into fillings values (1, 2, 'Queijo', 1.50),
 	                    (2, 2, 'Presunto', 1.20),
 			    (3, 2, 'Nutella', 5.50),
-	                    (1, 2, 'Queijo', 1.50),
-	                    (2, 2, 'Presunto', 1.50)
-			    (3, 2, 'Nutella', 5.50)
+	                    (4, 2, 'Frango', 2.50),
+	                    (5, 2, 'Carne moida', 3.00),
+	                    (1, 1, 'Queijo', 1.50),
+	                    (2, 1, 'Presunto', 1.20),
+			    (3, 1, 'Nutella', 5.50),
+	                    (4, 1, 'Frango', 2.50),
+	                    (5, 1, 'Carne moida', 3.00)
+			    
 
 select name, price from fillings where id_foods = 1
