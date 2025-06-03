@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donalds</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img width="100" src="./imgs/logo.png" alt="" />
+      <h1>Bem vindo!</h1>
+
+      <button onclick="showHistory()">Ver histórico</button>
+    </header>
+    <hr />
+    <div class="menu-container">
+      <div class="food-container">
+        Escolha o lanche:
+        <input onchange="getFood(1)" type="radio" id="tapioca" name="food" checked /> Tapioca
+        <input onchange="getFood(2)" type="radio" id="cuzcuz" name="food" /> Cuscuz
+      </div>
+      <div class="buyer-container">
+        CPF do Cliente: <input type="number" id="cpf" />
+      </div>
+    </div>
+    <hr>
+
+    <div class="body-container">
+      <div class="fillings-container">
+        <h2>Escolha o seu recheio</h2>
+        <div class="fillings">
+          <!-- <div><input type="checkbox" /> Queijo (R$ 1.50)</div>
+          <div><input type="checkbox" /> Presunto (R$ 0.50)</div>
+          <div><input type="checkbox" /> Nutella (R$ 5.50)</div> -->
+        </div>
+      </div>
+
+      <div class="price-container">
+        <div class="additions">
+          <p>Recheios Inseridos:</p>
+          <span id="additions"></span>
+          <div class="additions-list">
+            <ul id="additions-list"></ul>
+          </div>
+        </div>
+
+        <div class="payment-section">
+          <h2>Preço Total: R$ <span id="price"></span></h2>
+          <button onclick="confirmPayment()">Pagar</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal-history" class="modal" style="display: none;">
+      <div class="modal-content">
+        <h2>Histórico de Compras</h2>
+        <p>CPF: <span id="cpf-history"></span></p>
+        <ul id="history-list"></ul>
+        <button onclick="document.getElementById('modal-history').style.display='none'">Fechar</button>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <footer>
+  <div class="footer-container">
+    <div class="footer-info">
+      <p>&copy; 2025 Donalds. Todos os direitos reservados.</p>
+    </div>
+    <div class="footer-links">
+      <a href="#">Sobre</a>
+      <a href="#">Contato</a>
+      <a href="#">Política de Privacidade</a>
+    </div>
+  </div>
+</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
