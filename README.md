@@ -1,6 +1,6 @@
 # Projeto Donalds
 esse projeto foi desenvolvido com base nas aulas de programação web do curso de ADS, nele foi utilizado a abordagem FullStack, ou seja, usando Banco de Dados (pgAdmin), juntamente do Back-End e o Front-End.
-o projeto consiste na criação de um site de vendas de alimentos onde pode se escolher entre duas comidas tapioca e cuscuz, e selecionar os recheios que você deseja, e no final o historico da comprar e salvo e pode ser visualizado caso o cliente deseje.
+o projeto consiste na criação de um site de vendas de alimentos onde pode se escolher entre duas comidas tapioca e cuscuz, e selecionar os recheios que você deseja, e no final o historico da comprar e salvado e pode ser visualizado caso o cliente deseje.
 
 
 ## Design do Projeto
